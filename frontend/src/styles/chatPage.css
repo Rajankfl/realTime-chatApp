@@ -1,0 +1,393 @@
+html {
+    overflow: hidden;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    align-items: center;
+    background: linear-gradient(to bottom right, #65dfc9, #6cdbeb, #16db89);
+    overflow: hidden;
+}
+
+#logoutIcon {
+    font-size: 2rem;
+}
+
+.all .dashboard::-webkit-scrollbar {
+    width: 10px;
+}
+
+.all .dashboard::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+
+.all .dashboard::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: linear-gradient(180deg, #4ee2c7, #4dd1e6, #10df88);
+    box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+.all .messages::-webkit-scrollbar {
+    width: 10px;
+}
+
+.all .messages::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+
+.all .messages::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: linear-gradient(180deg, #4ee2c7, #4dd1e6, #10df88);
+    box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+.all section {
+    margin-top: 5%;
+    width: 75%;
+    min-height: 45vh;
+    max-height: 80vh;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(129, 79, 79, 0.1));
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.all section .dashboard {
+    overflow-y: scroll;
+    flex: 1;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(129, 79, 79, 0.1));
+    box-shadow: 2px 6px 20px rgba(122, 122, 122, 0.2);
+    border-bottom-right-radius: 1rem;
+    direction: ltr;
+    scrollbar-color: #d4aa70 #e4e4e4;
+    scrollbar-width: thin;
+}
+
+.all .chat .seen {
+    margin-top: 4.5% !important;
+    margin-right: 0 !important;
+}
+
+.all .chat .messages .right img {
+    height: 20px;
+    width: 20px;
+}
+
+.all .chat {
+    height: auto;
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.all img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.all input {
+    border: none;
+    outline: none;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(129, 79, 79, 0.1));
+    border-radius: 1rem;
+    padding: 5px 5px 5px 3%;
+}
+
+.all .dashboard input {
+    margin-left: 3%;
+    margin-top: -2px;
+    padding-left: 10%;
+}
+
+.all .dashboard .head {
+    padding: 3%;
+    border: 1px solid rgb(212, 210, 210);
+    border-top-left-radius: 1rem;
+    border-right: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.all .dashboard .head .search {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: 5%;
+}
+
+.all .dashboard .users {
+    font-family: 'Roboto';
+    overflow: hidden;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.all .dashboard .users .user {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0rem 1rem 1rem 2rem;
+}
+
+.all .dashboard .users .user .detial {
+    margin-left: 1rem;
+    text-overflow: ellipsis;
+}
+
+.all .dashboard .users .user .detial p {
+    font-family: 'Roboto';
+    text-overflow: ellipsis;
+}
+
+.all .chat .user {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all .chat input {
+    width: 80%;
+    flex-shrink: 6;
+}
+
+.all .chat .user .profile {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.chat .user .profile .userName {
+    margin-left: 1rem;
+}
+
+.all .chat .user .action i {
+    margin-right: 2rem;
+}
+
+.all .chat .messages {
+    font-family: 'Montserrat', sans-serif;
+    flex: 15;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.all .chat .sendMessages {
+    margin-top: 2%;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.all .chat .messages .deleteAction {
+    display: none;
+}
+.all .users .user .onlineUser{
+
+    margin-right: -3%;
+    margin-top: 5%;
+    width: 14px;
+    z-index: 3;
+    height: 14px;
+    background-color: #10df88;
+    border-radius: 50%;
+}
+.all .chat .messages .right:hover .deleteAction {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 15%;
+    justify-content: space-around;
+}
+
+.all .chat .messages .left:hover .deleteAction {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 15%;
+    justify-content: space-around;
+}
+
+.all .chat .messages .right .deleteAction input {
+    color: #426696;
+    margin-right: 25px;
+    width: 200%;
+    font-size: medium;
+    padding: 7px;
+}
+
+.all .chat .messages .left .deleteAction input {
+    color: #426696;
+    margin-left: 25px;
+    width: 200%;
+    font-size: medium;
+    padding: 7px;
+}
+
+.all .chat .sendMessages .sendIcons i {
+    margin-right: 1rem;
+    flex-shrink: 2;
+}
+
+.chat .messages .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.all .chat .messages .right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.all .chat .messages img {
+    width: 30px;
+    height: 30px;
+    margin-top: 1.5%;
+    margin-right: 0.5rem;
+}
+
+.all h2 {
+    color: #426696;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+.all p {
+    color: rgb(24, 22, 148);
+    font-weight: 500;
+    font-size: large;
+}
+
+.all .chat .messages .left .receive {
+    border-radius: 1rem;
+    padding: 5px 10px 5px 10px;
+    font-size: larger;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    max-width: 70%;
+    min-height: 30px;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9));
+    color: #426696;
+    opacity: 0.9;
+}
+
+.all .chat .messages .right .sended {
+    border-radius: 1rem;
+    padding: 5px 10px 5px 10px;
+    font-size: larger;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    max-width: 70%;
+    min-height: 30px;
+    color: white !important;
+    opacity: 0.7;
+    background: linear-gradient(to right, rgba(31, 31, 150, 0.788), rgba(194, 49, 129, 0.801));
+}
+
+.all .chat .selectOne {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all .chat .selectOne .notSelected {
+    font-weight: bold;
+    background: #12c2e9;
+    background: linear-gradient(to right top, #f64f59, #c471ed, #12c2e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+.all .dashboard .user:hover {
+    background-color: #b5fffd;
+}
+
+.all .chat .noMessages {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all .chat .noMessages .selectOthers {
+    font-weight: bold;
+    background: #12c2e9;
+    background: linear-gradient(to right top, #f64f59, #c471ed, #12c2e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+/*media screen here */
+
+@media screen and (max-width: 1250px) {
+    .all .dashboard .head .search {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .all .chat {
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #logoutIcon {
+        font-size: 1.3rem;
+    }
+    .logout {
+        font-size: 1.3rem;
+    }
+    .all .chat input {
+        width: 70%;
+    }
+    .all .chat .user .action i {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .all .chat .sendMessages .sendIcons i {
+        margin-right: 0.5rem;
+    }
+    .all .chat .user .action i {
+        margin-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .all .chat input {
+        width: 120px;
+    }
+}
